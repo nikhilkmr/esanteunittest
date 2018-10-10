@@ -32,6 +32,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/tools/jacob-1.18/jacob.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

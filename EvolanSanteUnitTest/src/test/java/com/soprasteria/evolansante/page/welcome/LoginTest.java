@@ -8,14 +8,15 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginTest
 {
     private WebDriver driver;
-
-    @FindBy(xpath = ".//*[@id='mainframe']/div[2]/input")
+    ///html/body/form/div/p[2]/input
+    //    @FindBy(xpath = ".//*[@id='mainframe']/div[2]/input")
+    @FindBy(xpath = "/html/body/form/div/p[2]/input")
     private WebElement userName;
 
-    @FindBy(xpath = "//*[@id='mainframe']/div[4]/input")
+    @FindBy(xpath = "/html/body/form/div/p[3]/input")
     private WebElement password;
 
-    @FindBy(xpath = "//*[@id='Layer6']/img")
+    @FindBy(xpath = "/html/body/form/div/p[4]")
     private WebElement loginButton;
 
     private String pageTitle;
