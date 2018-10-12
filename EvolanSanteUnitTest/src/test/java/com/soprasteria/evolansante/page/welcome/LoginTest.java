@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginTest
+public class LoginTest implements Testable
 {
     private WebDriver driver;
     ///html/body/form/div/p[2]/input
