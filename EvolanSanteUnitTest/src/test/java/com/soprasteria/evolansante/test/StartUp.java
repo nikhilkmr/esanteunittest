@@ -28,7 +28,6 @@ public class StartUp
         LoginTest loginTest = new LoginTest(driver);
         Assert.assertTrue(loginTest.doTest());
 
-        /*
         ListeDeTachesTest listeDeTachesTest = new ListeDeTachesTest(driver);
         Assert.assertTrue(listeDeTachesTest.doTest());
         
@@ -36,10 +35,13 @@ public class StartUp
         Assert.assertTrue(acsListeTest.doTest());
         
         GestionACSDetailTest acsDetailTest = new GestionACSDetailTest(driver);
-        Assert.assertTrue(acsDetailTest.doTest());*/
+        Assert.assertTrue(acsDetailTest.doTest());
 
         GestionPrestation gestionPrestation = new GestionPrestation(driver);
         Assert.assertTrue(gestionPrestation.doTest());
+
+        GestionDesEncaissementsTest gestionDesEncaissements = new GestionDesEncaissementsTest(driver);
+        Assert.assertTrue(gestionDesEncaissements.doTest());
 
     }
 
