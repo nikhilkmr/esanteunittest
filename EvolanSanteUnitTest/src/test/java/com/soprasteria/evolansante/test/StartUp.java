@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import com.soprasteria.evolansante.page.welcome.GestionACSDetailTest;
 import com.soprasteria.evolansante.page.welcome.GestionAcsListeTest;
-import com.soprasteria.evolansante.page.welcome.GestionDesEncaissementsTest;
+import com.soprasteria.evolansante.page.welcome.GestionPrestation;
 import com.soprasteria.evolansante.page.welcome.ListeDeTachesTest;
 import com.soprasteria.evolansante.page.welcome.LoginTest;
 
@@ -39,6 +39,8 @@ public class StartUp
         
         GestionACSDetailTest acsDetailTest = new GestionACSDetailTest(driver);
         Assert.assertTrue(acsDetailTest.doTest());
+        GestionPrestation gestionPrestation = new GestionPrestation(driver);
+        Assert.assertTrue(gestionPrestation.doTest());
 
         GestionDesEncaissementsTest gestionDesEncaissements = new GestionDesEncaissementsTest(driver);
         Assert.assertTrue(gestionDesEncaissements.doTest());

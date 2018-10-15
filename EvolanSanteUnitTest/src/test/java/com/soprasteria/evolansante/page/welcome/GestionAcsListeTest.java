@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class GestionAcsListeTest
+public class GestionAcsListeTest implements Testable
 {
     private WebDriver driver;
 

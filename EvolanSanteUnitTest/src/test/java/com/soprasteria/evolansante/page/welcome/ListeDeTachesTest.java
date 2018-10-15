@@ -3,7 +3,7 @@ package com.soprasteria.evolansante.page.welcome;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class ListeDeTachesTest
+public class ListeDeTachesTest implements Testable
 {
     private WebDriver driver;
 
