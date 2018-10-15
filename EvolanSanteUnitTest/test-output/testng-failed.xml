@@ -5,9 +5,9 @@
     <classes>
       <class name="com.soprasteria.evolansante.test.StartUp">
         <methods>
-          <include name="test"/>
-          <include name="beforeTest"/>
           <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="test"/>
         </methods>
       </class> <!-- com.soprasteria.evolansante.test.StartUp -->
     </classes>

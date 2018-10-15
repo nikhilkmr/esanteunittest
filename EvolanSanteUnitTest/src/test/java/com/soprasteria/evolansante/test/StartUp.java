@@ -13,10 +13,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.soprasteria.evolansante.page.welcome.GestionACSDetailTest;
-import com.soprasteria.evolansante.page.welcome.GestionAcsListeTest;
 import com.soprasteria.evolansante.page.welcome.GestionPrestation;
-import com.soprasteria.evolansante.page.welcome.ListeDeTachesTest;
 import com.soprasteria.evolansante.page.welcome.LoginTest;
 
 public class StartUp
@@ -31,7 +28,7 @@ public class StartUp
         LoginTest loginTest = new LoginTest(driver);
         Assert.assertTrue(loginTest.doTest());
 
-
+        /*
         ListeDeTachesTest listeDeTachesTest = new ListeDeTachesTest(driver);
         Assert.assertTrue(listeDeTachesTest.doTest());
         
@@ -39,7 +36,8 @@ public class StartUp
         Assert.assertTrue(acsListeTest.doTest());
         
         GestionACSDetailTest acsDetailTest = new GestionACSDetailTest(driver);
-        Assert.assertTrue(acsDetailTest.doTest());
+        Assert.assertTrue(acsDetailTest.doTest());*/
+
         GestionPrestation gestionPrestation = new GestionPrestation(driver);
         Assert.assertTrue(gestionPrestation.doTest());
 

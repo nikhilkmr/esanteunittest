@@ -77,8 +77,19 @@ public class GestionPrestation
         actualiser.click();
         Thread.sleep(1000);
         blueLink.click();
-        /* if (tableRows == null || (tableRows != null && tableRows.size() != 10)) { return false; }
-        System.out.println("Table Size : " + tableRows.size());*/
+        int count = tableRows.size();
+        if (tableRows == null)/* { return false; }*/
+        {
+            System.out.println(count);
+        }
+        if (tableRows != null && count != 10)
+        {/* return false; */
+
+                System.out.println(count);
+
+        }
+
+        System.out.println("Table Size : " + tableRows.size());
         Thread.sleep(5000);
         String pageTitle = driver.getTitle();
         return "LISTE DES DÉCOMPTES".equals(pageTitle);
